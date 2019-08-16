@@ -1,0 +1,38 @@
+" This file's content should be configure in ~/.vimrc
+
+" Just echo a cat face
+" echo ">^.^<"
+syntax on
+set cursorline
+" Add some key map
+let mapleader=" "
+	" line
+noremap lh <ESC>0i
+noremap le <ESC>$a
+noremap J 5j
+noremap K 5k
+	" file
+map s <nop>
+map S :w<CR>
+map Q :q<CR>
+map R :source $MYVIMRC<CR>
+
+imap <C-l> <right>
+imap <C-h> <left>
+
+"split windows and Tabs
+map sl :set splitright<CR>:vsplit<CR>
+map sh :set nosplitright<CR>:vsplit<CR>
+map sj :set splitbelow<CR>:split<CR>
+map sk :set nosplitbelow<CR>:split<CR>
+map <LEADER>l <C-w>l
+map <LEADER>h <C-w>h
+map <LEADER>j <C-w>j
+map <LEADER>k <C-w>k
+
+map <LEADER><up> :res +5<CR>
+map <LEADER><down> :res -5<CR>
+map <LEADER><left> :vertical resize-5<CR>
+map <LEADER><right> :vertical resize+5<CR>
+
+set scrolloff=5
