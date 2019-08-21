@@ -1,0 +1,8 @@
+# in ~/.profile for start up 
+# swap capsLock and Esc    
+(sleep 1 && xmodmap ~/.config/xmodmap/.Xmodmap) &
+
+# start fish shell in ~/.bashrc
+sleep 1
+fish 
+
